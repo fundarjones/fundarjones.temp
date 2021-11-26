@@ -883,7 +883,20 @@ Hero
 
 .homeline{
     position: absolute;
+    width: 100%;
+    height: auto;
     z-index: 2;
+}
+
+@media screen and (max-width:1600px){
+	.homeline{
+        top: 300px;
+    }
+}
+@media screen and (max-width:920px){
+	.homeline{
+        top: 600px !important;
+    }
 }
 
 .homeimg{
@@ -980,6 +993,7 @@ Features Slider
         width: 100%;
     }
 }
+
 .container-abt{
     position: relative;
     width:100px;
