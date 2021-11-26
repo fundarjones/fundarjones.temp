@@ -1,0 +1,2282 @@
+/* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+HTML5 display definitions
+========================================================================== */
+
+/*
+* Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+*/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block
+}
+
+/*
+* Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+*/
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*
+* Prevents modern browsers from displaying `audio` without controls.
+* Remove excess height in iOS 5 devices.
+*/
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+* Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3, * and Safari 4.
+* Known issue:no IE 6 support.
+*/
+[hidden] {
+    display: none
+}
+
+/* ==========================================================================
+Base
+========================================================================== */
+/*
+* 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+*    `em` units.
+* 2. Prevents iOS text size adjust after orientation change, without disabling
+*    user zoom.
+*/
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+* Addresses `font-family` inconsistency between `textarea` and other form
+* elements.
+*/
+html, button, input, select, textarea {
+    font-family: "Montserrat", sans-serif;
+}
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/*
+* Addresses margins handled incorrectly in IE 6/7.
+*/
+body {
+    margin: 0;
+    background-color: #0d1218;;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*
+* Font Smoothing
+*/
+html, html a {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+Links
+========================================================================== */
+/*
+* Addresses `outline` inconsistency between Chrome and other browsers.
+*/
+
+a:focus {
+    outline: thin dotted;
+    text-decoration: none;
+}
+
+/*
+* Improves readability when focused and also mouse hovered in all browsers.
+*/
+a:active, a:hover {
+    outline: 0;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+Typography
+========================================================================== */
+/*
+* Addresses font sizes and margins set differently in IE 6/7.
+* Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5, * and Chrome.
+*/
+
+h1 {
+    margin: 0.67em 0;
+    font-size: 2em;
+}
+h2 {
+    margin: 0.83em 0;
+    font-size: 1.5em;
+}
+h3 {
+    margin: 1em 0;
+    font-size: 1.17em;
+}
+h4 {
+    margin: 1.33em 0;
+    font-size: 1em;
+    z-index: 200;
+}
+h5 {
+    margin: 1.67em 0;
+    font-size: 0.83em;
+}
+h6 {
+    margin: 2.33em 0;
+    font-size: 0.75em;
+}
+
+/*
+* Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+*/
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+/*
+* Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+*/
+b, strong {
+    font-weight: bold
+}
+blockquote {
+    margin: 0px
+}
+
+/*
+* Addresses styling not present in Safari 5 and Chrome.
+*/
+dfn {
+    font-style: italic
+}
+
+/*
+* Addresses styling not present in IE 6/7/8/9.
+*/
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+* Addresses margins set differently in IE 6/7.
+*/
+p, pre {
+    margin: 1em 0
+}
+
+/*
+* Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+*/
+code, kbd, pre, samp {
+    font-size: 1em;
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+}
+
+/*
+* Improves readability of pre-formatted text in all browsers.
+*/
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+* Addresses CSS quotes not supported in IE 6/7.
+*/
+q {
+    quotes: none
+}
+
+/*
+* Addresses `quotes` property not supported in Safari 4.
+*/
+q:before, q:after {
+    content: '';
+    content: none;
+}
+small {
+    font-size: 75%
+}
+
+/*
+* Prevents `sub` and `sup` affecting `line-height` in all browsers.
+*/
+sub, sup {
+    position: relative;
+    vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+}
+sup {
+    top: -0.5em
+}
+sub {
+    bottom: -0.25em
+}
+
+/* ==========================================================================
+Lists
+========================================================================== */
+/*
+* Addresses margins set differently in IE 6/7.
+*/
+
+dl, menu, ol, ul {
+    margin: 1em 0
+}
+dd {
+    margin: 0 0 0 40px
+}
+
+/*
+* Addresses paddings set differently in IE 6/7.
+*/
+menu, ol, ul {
+    padding: 0
+}
+
+/*
+* Corrects list images handled incorrectly in IE 7.
+*/
+nav ul, nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+Embedded content
+========================================================================== */
+/*
+* 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+* 2. Improves image quality when scaled in IE 7.
+*/
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/*
+* Corrects overflow displayed oddly in IE 9.
+*/
+svg:not(:root) {
+    overflow: hidden
+}
+
+/* ==========================================================================
+Figures
+========================================================================== */
+/*
+* Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+*/
+
+figure {
+    margin: 0
+}
+
+/* ==========================================================================
+Forms
+========================================================================== */
+/*
+* Corrects margin displayed oddly in IE 6/7.
+*/
+
+form {
+    margin: 0
+}
+
+/*
+* Define consistent border, margin, and padding.
+*/
+fieldset {
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+    border: 1px solid #c0c0c0;
+}
+
+/*
+* 1. Corrects color not being inherited in IE 6/7/8/9.
+* 2. Corrects text not wrapping in Firefox 3.
+* 3. Corrects alignment displayed oddly in IE 6/7.
+*/
+legend {
+    padding: 0;
+    border: 0; /* 1 */
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/*
+* 1. Corrects font size not being inherited in all browsers.
+* 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5, *    and Chrome.
+* 3. Improves appearance and consistency in all browsers.
+*/
+button, input, select, textarea {
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    font-size: 100%; /* 1 */
+    *vertical-align: middle; /* 3 */
+}
+
+/*
+* Addresses Firefox 3+ setting `line-height` on `input` using ` !important` in
+* the UA stylesheet.
+*/
+button, input {
+    line-height: normal
+}
+
+/*
+* 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+*    and `video` controls.
+* 2. Corrects inability to style clickable `input` types in iOS.
+* 3. Improves usability and consistency of cursor style between image-type
+*    `input` and others.
+* 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+*    Known issue:inner spacing remains in IE 6.
+*/
+button, html input[type="button"], /* 1 */
+input[type="reset"], input[type="submit"] {
+    cursor: pointer; /* 3 */
+    -webkit-appearance: button; /* 2 */
+    *overflow: visible; /* 4 */
+}
+
+/*
+* Re-set default cursor for disabled elements.
+*/
+button[disabled], input[disabled] {
+    cursor: default
+}
+
+/*
+* 1. Addresses box sizing set to content-box in IE 8/9.
+* 2. Removes excess padding in IE 8/9.
+* 3. Removes excess padding in IE 7.
+*    Known issue:excess padding remains in IE 6.
+*/
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/*
+* 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+* 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+*    (include `-moz` to future-proof).
+*/
+input[type="search"] {
+    /* 2 */
+    box-sizing: content-box;
+    -webkit-appearance: textfield; /* 1 */
+    nowhitespace: afterproperty;
+}
+
+/*
+* Removes inner padding and search cancel button in Safari 5 and Chrome
+* on OS X.
+*/
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+/*
+* Removes inner padding and border in Firefox 3+.
+*/
+button::-moz-focus-inner, input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/*
+* 1. Removes default vertical scrollbar in IE 6/7/8/9.
+* 2. Improves readability and alignment in all browsers.
+*/
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+Tables
+========================================================================== */
+/*
+* Remove most spacing between table cells.
+*/
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* ==========================================================================
+Global Styles
+========================================================================== */
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+a {
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transition-property: color, border-color, background-color;
+    transition-property: color, border-color, background-color;
+}
+.nopadding {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+p {
+    font-size: 14px;
+    line-height: 25px;
+}
+a {
+    color: #73d0da
+}
+a:hover, a:focus {
+    color: #73d0da;
+    text-decoration: none;
+}
+.texture-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+/* ==========================================================================
+Buttons
+========================================================================== */
+.use-btn {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    padding: 20px 50px;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #0d1218;
+    font-size: 16px;
+}
+.use-btn:hover, .use-btn:focus {
+    background-color: #73d0da;
+    color: #fff;
+    text-decoration: none;
+}
+.learn-btn, .download-btn {
+    display: inline-block;
+    padding: 18px 46px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+}
+.learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus {
+    border-color: #73d0da;
+    color: #73d0da;
+    text-decoration: none;
+}
+.read-more-btn {
+    display: inline-block;
+    color: #323a45;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.read-more-btn i, .download-btn i {
+    margin-left: 5px
+}
+.showcase .download-btn {
+    margin-top: 50px
+}
+.download .download-btn {
+    margin-top: 25px
+}
+
+/* ==========================================================================
+Navigation
+========================================================================== */
+
+
+.navigation
+{
+    z-index: 20;
+    position: absolute;
+    top: 42px;
+    right: 0;
+    left: 0;
+    width: 319px;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+
+.navigation a
+{
+    position: relative;
+    width: 33.333%;
+    display: table-cell;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.2s ease color;
+}
+
+.navigation a:before, .navigation a:after
+{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+}
+
+.navigation a:before
+{
+    top: 0;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+}
+
+.navigation a:after
+{
+    top: 5px;
+    left: 18px;
+    width: 4px;
+    height: 4px
+}
+
+.navigation a:nth-child(1):before
+{
+    background-color: yellow;
+}
+
+.navigation a:nth-child(1):after
+{
+    background-color: red;
+}
+
+.navigation a:nth-child(3):before
+{
+    background-color: #00e2ff;
+}
+
+.navigation a:nth-child(3):after
+{
+    background-color: #89ff00;
+}
+
+.navigation a:nth-child(5):before
+{
+    background-color: purple;
+}
+
+.navigation a:nth-child(5):after
+{
+    background-color: palevioletred;
+}
+
+.navigation a:nth-child(7):before
+{
+    background-color: rgb(45, 0, 128);
+}
+
+.navigation a:nth-child(7):after
+{
+    background-color: rgb(112, 204, 216);
+}
+
+.navigation a:nth-child(9):before
+{
+    background-color: rgb(255, 255, 255);
+}
+
+.navigation a:nth-child(9):after
+{
+    background-color: rgb(51, 49, 50);
+}
+
+.navigation a:nth-child(11):before
+{
+    background-color: rgb(105, 206, 92);
+}
+
+.navigation a:nth-child(11):after
+{
+    background-color: rgb(180, 38, 38)
+}
+
+#indicator
+{
+    position: absolute;
+    left: 1.5%;
+    margin-top: 52px;
+    width: 75px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.2s ease left;
+}
+
+.navigation a:hover
+{
+    color: #fff;
+}
+
+.navigation a:hover:before, .navigation a:hover:after
+{
+    transform: scale(1);
+}
+
+.navigation a:nth-child(1):hover ~ #indicator
+{
+    background: linear-gradient(130deg, yellow, red);
+}
+
+.navigation a:nth-child(3):hover ~ #indicator
+{
+    left: 15.5%;
+    background: linear-gradient(130deg, #00e2ff, #89ff00);
+}
+
+.navigation a:nth-child(5):hover ~ #indicator
+{
+    left: 32%;
+    background: linear-gradient(130deg, purple, palevioletred);
+}
+
+.navigation a:nth-child(7):hover ~ #indicator
+{
+    left: 52.5%;
+    background: linear-gradient(130deg, rgb(45, 0, 128), rgb(112, 204, 216));
+}
+
+.navigation a:nth-child(9):hover ~ #indicator
+{
+    left: 72.5%;
+    background: linear-gradient(130deg, rgb(255, 255, 255), rgb(51, 49, 50));
+}
+
+.navigation a:nth-child(11):hover ~ #indicator
+{
+    left: 87.5%;
+    background: linear-gradient(130deg, rgb(105, 206, 92), rgb(180, 38, 38));
+}
+#ytd-url {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 10px 14px;
+  margin: 20px;
+  color: #fff;
+  font-family: Arial;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
+  z-index: 125;
+}
+.nav-bar{
+    background-color: #0d1218;
+    width: 100%;
+    z-index: 50;
+    display: block;
+    position: fixed;
+}
+
+/*-----------------------------OVERLAY-----------------------------*/
+
+.nav-toggle {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 999999;
+    padding: 10px 35px 16px 0px;
+    cursor: pointer;
+}
+.nav-toggle:focus {
+    outline: none;
+}
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 5px;
+    border-radius: 1px;
+    background: #fff;
+    cursor: pointer;
+}
+.nav-toggle span:before {
+    top: -10px
+}
+.nav-toggle span:after {
+    bottom: -10px
+}
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.nav-toggle.active span {
+    background-color: transparent
+}
+.nav-toggle.active span:before, .nav-toggle.active span:after {
+    top: 0
+}
+.nav-toggle.active span:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.nav-toggle.active span:after {
+    top: 10px;
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+}
+@media screen and (max-width:990px){
+	.navicon {
+        top: 20px;
+        right: 10px;
+        position: absolute;
+        margin: 10px 0 0 0;
+        height: 26px;
+        z-index: 0;
+        z-index: 30 !important;
+    }
+    .navigation{
+        display: none;
+    }
+    .navline{
+        top: 50px !important;
+        padding-top: 30px;
+    }
+}
+.navicon{
+    bottom:100px;
+}
+.navicon p {
+    margin: 1px 50px 0 0
+}
+.navicon-fixed {
+    position: fixed;
+    top: 59px;
+    right: 143px;
+}
+.div-logo{
+    z-index: 10;
+}
+.logo{
+    position: absolute;
+    top: 15px;
+    bottom: 10px;
+    max-width: 45px;
+}
+
+/* ==========================================================================
+Back to Top Button
+========================================================================== */
+
+.noselect { 
+    position: absolute;
+	width: 75px;
+	height: 75px;
+	cursor: pointer;
+	background-color: #5de6de;
+	background-image: linear-gradient(315deg, #5de6de 0%, #3f6184 74%);
+	border: none;
+	border-radius: 50%;
+	transition: 200ms;
+}
+
+.vertical-center{
+    height: 5vh;
+    padding-bottom: 175px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+
+.noselect svg {
+	fill: white;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.noselect:before {
+	content: 'Back to Top';
+	position: absolute;
+	transform: translateX(-50%) translateY(45px);
+	font-size: 15px;
+	transition: 200ms;
+	color: transparent;
+	font-weight: bold;
+}
+
+.noselect:hover {
+	box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+	width: 80px;
+	height: 80px;
+}
+
+.noselect:hover::before {
+	color: #fff;
+}
+
+.noselect:hover svg {
+		animation: bounce 2s infinite linear;
+}
+
+@keyframes bounce {
+	0% {transform: translateX(-50%) translateY(-50%)}
+	25% {transform: translateX(-50%) translateY(-65%)}
+	50% {transform: translateX(-50%) translateY(-50%)}
+	75% {transform: translateX(-50%) translateY(-35%)}
+	100% {transform: translateX(-50%) translateY(-50%)}
+}
+
+.noselect:focus {
+	outline: none;
+}
+
+/* ==========================================================================
+Hero
+========================================================================== */
+.col-md-12{
+    z-index: 10;
+}
+.navline{   
+    top: 21px;
+    margin-top: 29px;
+    position: relative;
+    width: 100%;
+    z-index: 3000;
+    border-top: 1px solid #1b2026;
+}
+
+.homeline{
+    position: absolute;
+    z-index: 2;
+}
+
+.homeimg{
+    position: absolute;
+    max-width: 300px;
+    height: auto;
+    padding-top: 150px;
+    justify-content: center;
+    z-index: 10;
+    
+}
+
+.hero {
+    position: relative;
+    padding: 20px 0 60px 0;
+    min-height: 800px;
+    background-size: cover;
+    color: #fff;
+}
+.hero h1 {
+    margin: 200px 0 45px 0;
+    font-weight: 300;
+    font-size: 45px;
+}
+.hero h1 span {
+    display: inline-block;
+    color: #a1a9b0;
+}
+#home {
+    width: 100%;
+    height: 100%;
+}
+.hero {
+    width: 100%;
+    height: 100%;
+}
+header i {
+    margin-left: 5px
+}
+
+/* ==========================================================================
+Video
+========================================================================== */
+section.video i {
+    margin-right: 10px;
+    color: #323a45;
+    vertical-align: middle;
+    font-size: 50px;
+    -webkit-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+}
+section.video h1 {
+    font-weight: 400;
+    font-size: 20px;
+}
+section.video {
+    padding: 60px 0;
+    background-color: #f6f7f9;
+}
+section.video a {
+    color: #323a45
+}
+section.video a:hover, section.video a:focus {
+    color: #73d0da;
+    text-decoration: none;
+}
+section.video a:hover i, section.video a:focus i {
+    color: #73d0da
+}
+
+/* ==========================================================================
+Custom Slider Controls (Flickity)
+========================================================================== */
+.flickity-page-dots .dot {
+    width: 13px;
+    height: 13px;
+    background: transparent;
+    border: 2px solid white;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+}
+.flickity-page-dots .dot.is-selected {
+    background: white;
+}
+
+/* ==========================================================================
+Features Slider
+========================================================================== */
+@media screen and (max-width:680px){
+	.aboutimg{
+        margin-top: 400px;
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+}
+.container-abt{
+    position: relative;
+    width:100px;
+    height: 50px;
+    margin-top: 150px;
+    margin-left: 15px;
+}
+.linkbtn{
+    position: absolute;
+    padding-left: 40px;
+    padding-top: 13px;
+    min-width: 175px;
+    min-height: 45px;
+    color: white;
+    z-index: 2;
+}
+.linkbtn:hover{
+    color: #0d1218;
+    background-color: white;
+}
+.downloadbtn{
+    position: absolute;
+    z-index: 1;
+}
+.aboutimg{
+    position: relative;
+    z-index: 0.5;
+}
+
+.col-md-6 h1, p{
+    margin: 15;
+    color: white;
+
+}
+.features-bg {
+    position: relative;
+    min-height: 400px;
+    background: url('../assets/about-image.png') no-repeat center center;
+    background-size: cover;
+}
+.features-img {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    line-height: 400px;
+}
+.features-slider {
+    position: relative;
+    padding: 11% 100px 10% 100px;
+    height: 400px;
+    background-color: #3F6184;
+}
+.features-slider ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.features-slider ul li {
+    width: 100%;
+}
+.features-slider li h1 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+}
+.features-slider li p {
+    color: #fff;
+    font-size: 14px;
+}
+.features-intro-img {
+    position: relative
+}
+.slides li h1 {
+    margin: 0;
+    padding: 0;
+}
+.features-slider .flickity-page-dots {
+    text-align: left;
+    margin-top: 50px;
+    position: static;
+}
+.features-slider .flickity-page-dots .dot {
+    margin: 0 12px 0 0;
+}
+
+/* ==========================================================================
+Features List
+========================================================================== */
+.features-list {
+    padding: 130px 0
+}
+.features-list h1 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #24374b;
+    font-size: 20px;
+}
+.features-list p {
+    margin-bottom: 20px;
+    color: #778899;
+}
+.feature-content {
+    display: inline-block;
+    margin-left: 0;
+    width: 65%;
+}
+.feature-icon {
+    display: inline-block;
+    margin-right: 25px;
+    width: 90px;
+    height: 90px;
+    padding-top: 32px;
+    border: solid 2px #4e9ba3;
+    border-radius: 50%;
+    vertical-align: top;
+    text-align: center;
+    font-size: 25px;
+    line-height: 90px;
+}
+.feature-icon i {
+    color: #4e9ba3
+}
+
+.feature-img {
+    display: inline-block;
+    margin-right: 25px;
+    width: 90px;
+    height: 90px;
+    padding-top: 20px;
+    border: solid 2px #4e9ba3;
+    border-radius: 50%;
+    vertical-align: top;
+    text-align: center;
+    font-size: 25px;
+    line-height: 90px;
+}
+.feature-img img{
+    max-width: 50px;
+}
+
+/* ==========================================================================
+Blockquote
+========================================================================== */
+blockquote {
+    margin: 40px 0 0;
+    padding: 0;
+    border: none;
+}
+blockquote p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    vertical-align: top;
+    font-style: italic;
+}
+blockquote .avatar {
+    display: inline-block;
+    margin-right: 20px;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+}
+blockquote .logo-quote {
+    display: inline-block;
+    margin: 0 0 0 90px;
+}
+
+/* ==========================================================================
+Showcase
+========================================================================== */
+.showcase {
+    background: url('../img/showcase-bg-fixed-01.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.showcase h1 {
+    margin: 0 0 20px 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+}
+.showcase p {
+    margin-bottom: 25px;
+    color: #fff;
+}
+.device {
+    position: absolute;
+    top: -60px;
+    left: 20%;
+    min-height: 676px;
+    width: 359px;
+    background: url('../img/iphone-skeleton.png') no-repeat center center;
+}
+.device-content {
+    position: absolute;
+    top: 115px;
+    left: 56px;
+    width: 247px;
+    height: 445px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.device-content img {
+    width: 247px;
+    height: 445px;
+}
+.showcase-wrap {
+    position: relative;
+    padding: 100px 0;
+    min-height: 600px;
+}
+.showcase-slider ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.showcase-slider .flickity-page-dots {
+    bottom: 20px;
+}
+
+.features-img img{
+    display: block;
+    left: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/* ==========================================================================
+Screenshots Intro
+========================================================================== */
+.screenshots-intro {
+    padding: 170px 0 100px 0;
+    background-color: #f6f7f9;
+}
+.screenshots-intro h1 {
+    margin-bottom: 20px;
+    color: #24374b;
+    font-weight: 400;
+    font-size: 22px;
+}
+.screenshots-intro p {
+    margin-bottom: 25px;
+    color: #778899;
+}
+
+/* ==========================================================================
+Screenshots
+========================================================================== */
+.screenshots{
+    max-width: 100%;
+}
+
+.screenshots ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.screenshots ul li {
+    float: left;
+    min-height: auto;
+    width: 33.33%;
+    background-color: #000;
+    list-style: none;
+}
+.screenshots figure {
+    position: relative;
+    overflow: hidden;
+}
+.screenshots figure img {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.screenshots figure:hover img, .screenshots figure:focus img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.screenshots figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25% 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 97, 132, 0.85);
+    text-align: center;
+    font-size: 15px;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.screenshots figcaption a {
+    color: #fff
+}
+.screenshots figcaption a:hover, .screenshots figcaption a:focus {
+    color: #73d0da
+}
+.screenshots figure:hover figcaption, .screenshots figure:focus figcaption {
+    opacity: 1
+}
+.visible {
+    opacity: 1
+}
+.screenshots figure.cs-hover figcaption {
+    opacity: 1
+}
+.screenshots figcaption i {
+    font-size: 35px
+}
+.screenshots figcaption p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.screenshots figcaption .caption-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -100px;
+    width: 200px;
+    -webkit-transform: translate(0px, 15px);
+    -ms-transform: translate(0px, 15px);
+    transform: translate(0px, 15px);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.screenshots figure:hover figcaption .caption-content, .screenshots figure:focus figcaption .caption-content {
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+
+.footer-logo, footer p, footer button{
+    text-align: center;
+}
+
+.footer-logo{
+    display: block;
+    left:0;
+    right: 0;
+}
+
+
+/* ==========================================================================
+Blog
+========================================================================== */
+#blog{
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#blog h3{
+    text-align: center;
+    color: white;
+}
+.blog-title{
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-family: 'Poppins';
+    display: block;
+}
+.blog-container{
+    margin-top: 50px;
+}
+.blog-container img{
+    width: 100%;
+}
+.blog2-img img{
+    width: 100%;
+}
+.blog-content1 h1{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Poppins';
+}
+#blog-2 img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.blog-btn1{
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+    border-color: #06a2f8;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-image: url("../assets/blogbtn.png");
+    background-position: center;
+    color: white;
+    font-family: 'Poppins';
+}
+.blog-btn1:hover{
+    color: #0d1218
+}
+.blog-content2 h1{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Poppins';
+}
+.blog-content2{
+    margin-top: 30px;
+}
+.blog-btn2{
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #0d1218;
+    background-position: center;
+    color: white;
+    font-family: 'Poppins';
+    border-color: #06a2f8;
+    margin-bottom: 50px;
+}
+.blog-btn2:hover{
+    background-color: #06a2f8;
+    color: #0d1218;
+}
+.popup__text h1{
+    margin: 0;
+    display: block;
+    
+}
+@media (max-width: 630px) {
+    .popup__photo{
+        display: none !important;
+    }
+    .popup__text{
+        width: 100% !important;
+    }
+}
+
+/* ==========================================================================
+Contact
+========================================================================== */
+#contact{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #141b25;
+    height: auto;
+}
+
+#contact h1{
+    display: block;
+    text-align: center;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+#contact p{
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.contact-container{
+    display: block;
+    padding-left: 550px;
+    padding-right: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1400px) {
+    .contact-container{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+
+#contact img{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+#contact .input1{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+    padding-left: 10px;
+}
+
+#contact .input2{
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+
+.submitbtn{
+    margin-top: 50px;
+    text-align: center;
+    max-width: 150px;
+    height: 45px;
+    background-image: url("../assets/downloadbtn.png");
+    display: block;
+    border: none;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: #345271;
+}
+
+.submitbtn:hover{
+    color: #24374b !important;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.center{
+    
+    text-align: center;
+    
+}
+
+/* ==========================================================================
+Skills
+========================================================================== */
+#skills img{
+    display: block;
+    padding-top: 30px;
+    width: 100%;
+    height: auto;
+}
+#skills h1{
+    margin: 0;
+    color: white;
+    font-family:'Poppins', sans-serif;
+    display: block;
+}
+#skills h3{
+    margin-top: 100px;
+    color: white;
+    font-family:'Poppins', sans-serif;
+    display: block;
+}
+#skills{
+    background-image: url("../assets/skillsbg.png");
+    height: auto;
+    background-position: center;
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+}
+.skills-container{
+    margin-top: 50px;
+    background-color: #142e4c;
+}
+.skill-column{
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+.skill-column h3{
+    margin-top: 0px !important;
+}
+.percentage{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 0.9em;
+}
+.progress2 {
+    border-radius: 30px;
+    background: white;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar2 {
+    height: 18px;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+} 
+
+/* ==========================================================================
+Modal Portfolio
+========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600&amp;subset=latin-ext');
+@media screen and (max-width: 768px) {
+  .modal-container {
+    font-size: 12px;
+  }
+}
+.modal-container {
+  background-color: #9191E9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.modal-button {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  color: #9191E9;
+  padding: 1rem 2rem;
+}
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 50;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hiden;
+  transition: 0.64s ease-in-out;
+}
+.popup-inner {
+  position: relative;
+  bottom: -100vw;
+  right: -100vh;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  max-height: 600px;
+  width: 60%;
+  height: 80%;
+  background-color: #fff;
+  transform: rotate(32deg);
+  transition: 0.64s ease-in-out;
+}
+.popup__photo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+.popup__photo img {
+  width: auto;
+  height: 110%;
+}
+.popup__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+  padding: 4rem;
+}
+.popup__text h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #0A0A0A;
+}
+.popup__text p {
+  font-size: 0.875rem;
+  color: #686868;
+  line-height: 1.5;
+}
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup:target .popup-inner {
+  bottom: 0;
+  right: 0;
+  transform: rotate(0);
+}
+.popup__close {
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  border-radius: 100%;
+  background-color: #4183c4;
+  z-index: 4;
+  color: #fff;
+  line-height: 3rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.popup-portfolio{
+    display: block;
+}
+.popup-portfolio img{
+    max-width: 100%;
+    text-align: center;
+}
+.portfolio-modal-close{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+    background-color: #4183c4;
+    z-index: 4;
+    color: #fff;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+.popup__close:hover{
+    color: #0d1218;
+    background-color: #fff;
+}
+
+
+/* ==========================================================================
+Modal
+========================================================================== */
+
+.modal-overlay {
+    background: #080616;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.modal h1, .modal h2,.modal h3,.modal h4,.modal h5,.modal h6 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 1.875rem;
+    font-weight: 300;
+    margin: 60px 0 30px 0;
+    color: #fff;
+}
+
+/** * Overlay * -- only show for tablet and up */
+@media only screen and (min-width: 40em) {
+    .modal-overlay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3000;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        visibility: hidden;
+        backface-visibility: hidden;
+        transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+   }
+    .modal-overlay.active {
+        opacity: 1;
+        visibility: visible;
+   }
+}
+/** * Modal */
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    background-color: #fff;
+    width: 600px;
+    max-width: 75rem;
+    min-height: 20rem;
+    padding: 1rem;
+    border-radius: 3px;
+    opacity: 0;
+    overflow-y: auto;
+    visibility: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    transform: scale(1.2);
+    transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.modal .close-modal {
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    right: 15px;
+    opacity: 0;
+    backface-visibility: hidden;
+    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    transition-delay: 0.3s;
+}
+.modal .close-modal svg {
+    width: 1.75em;
+    height: 1.75em;
+}
+.modal .modal-details {
+    opacity: 0;
+    backface-visibility: hidden;
+    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    transition-delay: 0.3s;
+}
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    z-index: 3000;
+}
+.hide{
+    display: none;
+    opacity: 0;
+}
+.modal.active .modal-details {
+    opacity: 1;
+}
+.modal.active .close-modal {
+    transform: translateY(10px);
+    opacity: 1;
+}
+/** * Mobile styling */
+@media only screen and (max-width: 39.9375em) {
+    h1 {
+        font-size: 1.5rem;
+   }
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 0;
+        transform: scale(1.1);
+        padding: 0 !important;
+   }
+    .close-modal {
+        right: 20px !important;
+   }
+}
+/* ==========================================================================
+Service
+========================================================================== */
+.myservice{
+    background-color: #141b25;
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    padding-bottom: 100px;
+}
+.service-item{
+    top: 70px;
+    max-width: 80px;
+    margin-left: 25px;
+    position: absolute;
+}
+.service1{
+    display: none;
+}
+.service2{
+    position: relative;
+    top: 175px;
+}
+.servicesline{
+    display: block;
+    height: 100%;
+}
+.service3{
+    display: none;
+}
+.myservice h1{
+    padding-top: 65px;
+    padding-left: 13px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.service-container{
+    display: block;
+    background-color: #0d1218;
+    height: 255px;
+    margin-top: 120px;
+}
+
+.service-container img{
+    margin-top: 75px;
+    width: 100%;   
+    margin-bottom: 75px;
+}
+.service-container h3{
+    padding-top: 110px;
+    padding-left: 23px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    position: absolute;
+}
+.service-container p{
+    position: absolute;
+    padding-top: 140px;
+    font-size: 0.8em;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+@media screen and (max-width:991px){
+	.service-item{
+        top: 30px !important;
+        margin-top: 0 !important;
+    }
+}
+/* ==========================================================================
+Experience
+========================================================================== */
+
+#experiences{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#experiences .title{
+    font-family: 'Poppins';
+    text-align: center;
+    display: block;
+    margin-bottom: 80px;
+}
+
+.experiences-container h1{
+    font-family: 'Poppins';
+    text-align: center;
+    display: block;
+}
+
+.experiences-container h2{
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+#experiences img{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.yearbg{
+    position: absolute;
+    text-align: center;
+    border-width: 30px;
+    border-radius: 30px;
+    top: 4px;
+    width: 50%;
+    border-color: #898989;
+    left: 0;
+    right: 0;
+}
+
+.experiences-year{
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 50px;
+}
+
+.container-exp{
+    display: block;
+    width: 200px;
+    height: 33px;
+}
+
+.container-exp h5{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+/* ==========================================================================
+Portfolio
+========================================================================== */
+#portfolio{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#portfolio h1, #portfolio h3{
+    color: white;
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+    display: block;
+    margin: 30;
+}
+#portfolio h1{
+    margin-bottom: 100px;
+}
+.portfolio-images img{
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+}
+/* ==========================================================================
+Download Now
+========================================================================== */
+.download {
+    padding: 120px 0;
+    background-color: #3f6184;
+}
+.download h1 {
+    margin: 0 0 15px 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.download h2 {
+    margin: 0 0 15px 0;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* ==========================================================================
+Footer
+========================================================================== */
+footer {
+    padding: 100px 0
+}
+footer p {
+    color: #c7cacc;
+    font-size: 12px;
+}
+footer ul {
+    margin-top: 30px
+}
+footer li {
+    float: left;
+    margin-right: 15%;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+footer li a {
+    color: #3f6184
+}
+footer li:last-child {
+    margin-right: 0
+}
+
+.clip {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.svg--source {
+    display: none;
+}
+.svg--icon {
+    width: 100%;
+    border-radius: 100px;
+    background-color: #fff;
+    max-width: 5rem;
+    height: 100%;
+    max-height: 5rem;
+    display: block;
+    margin: 0 auto;
+    fill: currentColor;
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.share {
+    width: 5rem;
+    height: 5rem;
+    float: left;
+    margin: 0.5rem 1rem 0.5rem 0;
+    color: #353c4a;
+    border: 0.125rem solid #f3f3f3;
+    box-shadow: 0 0 8px 0 rgba(50, 50, 50, 0.15);
+    border-radius: 50%;
+    transition: 250ms;
+}
+.share:last-child {
+    margin-right: 0;
+}
+.share:focus {
+    outline-color: inherit;
+}
+.twitter:hover, .twitter:focus {
+    color: #00aced;
+    box-shadow: 0 0 24px 0 #00aced;
+}
+.mail:hover, .mail:focus {
+    color: #4183c4;
+    box-shadow: 0 0 24px 0 #4183c4;
+}
+.pinterest:hover, .pinterest:focus {
+    color: #bd081c;
+    box-shadow: 0 0 24px 0 #bd081c;
+}
+.youtube:hover, .youtube:focus {
+    color: #cd201f;
+    box-shadow: 0 0 24px 0 #cd201f;
+}
+.facebook:hover, .facebook:focus {
+    color: #3b5998;
+    box-shadow: 0 0 24px 0 #3b5998;
+}
+.google:hover, .google:focus {
+    color: #dd4b39;
+    box-shadow: 0 0 24px 0 #dd4b39;
+}
+
+/* ==========================================================================
+Nav Overlay
+========================================================================== */
+/* Overlay style */
+
+.overlay {
+    z-index: 3000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 82, 113, 0.95);
+}
+
+/* Menu style */
+.overlay nav {
+    position: relative;
+    top: 50%;
+    height: 60%;
+    text-align: center;
+    font-size: 54px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.overlay ul {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+.overlay ul li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+.overlay ul li:last-child {
+    margin-right: 0px
+}
+.overlay ul li i {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.overlay ul li a {
+    display: block;
+    padding: 50px 0;
+    min-width: 190px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    background-color: #345271;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.overlay ul li a:hover, .overlay ul li a:focus {
+    border-color: #73d0da;
+    color: #73d0da;
+}
+
+/* Effects */
+.overlay-boxify {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, visibility 0s 0.5s;
+}
+.overlay-boxify.open {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.overlay-boxify nav ul li {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -80px, 0);
+    transform: translate3d(0, -80px, 0);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.overlay-boxify.open nav ul:first-child li:first-child {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+.overlay-boxify.open nav ul:first-child li:nth-child(2) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+.overlay-boxify.open nav ul:nth-child(2) li:first-child {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+.overlay-boxify.open nav ul:nth-child(2) li:nth-child(2) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.overlay-boxify.open nav ul li {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* ==========================================================================
+Waypoints
+========================================================================== */
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
+    visibility: visible
+}
+.delay-05s {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.delay-1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+
+
+
+
+@keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+  
