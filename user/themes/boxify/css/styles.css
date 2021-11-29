@@ -1425,7 +1425,14 @@ Blog
         display: none !important;
     }
     .popup__text{
+        margin: auto;
         width: 100% !important;
+    }
+    .popup__text h1{
+        font-size: 1.3em !important;
+    }
+    .popup__text p{
+        font-size: 0.8em !important;
     }
 }
 
@@ -1661,7 +1668,7 @@ Modal Portfolio
   padding: 4rem;
 }
 .popup__text h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 2rem;
   text-transform: uppercase;
