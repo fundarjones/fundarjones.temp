@@ -313,7 +313,7 @@
                         <section id="contact">
   <h1>Contact Me</h1>
   <div class="contact-container">
-  <form action="https://formspree.io/f/xjvlbopg" method="post">
+  <form action="https://formspree.io/f/xjvlbopg" method="post" id="contact-form">
       <p> Name: </p>
     <input type="text" class="input1" id="name" name="name">
       <p> Email: </p>
@@ -325,6 +325,13 @@
   </form>
   </div>
 </section>
+
+<script>
+  Webflow.push(function(){
+$("#contact-form").submit(function(){
+  location.reload();
+})});
+</script>
 
                         <section id="blog">
 <h3>Blog</h3>
