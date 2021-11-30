@@ -17,6 +17,10 @@ $('.blogmodal').click(function(){
     window.location.href = "#blog";
 });
 
+$('.contactmodal').click(function(){
+    window.location.href = "#";
+});
+
 
 
 
