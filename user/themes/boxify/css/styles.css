@@ -1530,6 +1530,16 @@ Contact
     
 }
 
+.popup-contact{
+    height: auto !important;
+}
+
+.popup-contact-text{
+    margin-top: 20px;
+    width: 100% !important;
+    text-align: center;
+}
+
 /* ==========================================================================
 Skills
 ========================================================================== */
